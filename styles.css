@@ -20,11 +20,12 @@ body {
   background: linear-gradient(180deg, #edf2ff 0%, #f8faff 34%, #ffffff 100%);
   line-height: 1.6;
   scroll-behavior: smooth;
+  padding-top: 84px;
 }
 
 .floating-logo {
   position: fixed;
-  top: 14px;
+  top: 88px;
   right: 14px;
   z-index: 30;
   background: rgba(8, 24, 66, 0.8);
@@ -56,9 +57,17 @@ body {
   align-items: center;
   padding: 20px 0;
   gap: 16px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1080px, 92%);
   z-index: 10;
+  background: rgba(8, 23, 61, 0.86);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
   backdrop-filter: blur(9px);
 }
 
@@ -94,7 +103,7 @@ body {
 }
 
 .hero-content {
-  padding-top: 36px;
+  padding-top: 72px;
 }
 
 .eyebrow {
@@ -130,7 +139,7 @@ h1 {
 
 .section {
   padding: 78px 0;
-  scroll-margin-top: 86px;
+  scroll-margin-top: 104px;
 }
 
 .section h2 {
@@ -489,6 +498,8 @@ footer {
   .nav {
     align-items: flex-start;
     flex-direction: column;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .nav-links {
@@ -496,7 +507,7 @@ footer {
   }
 
   .floating-logo {
-    top: 10px;
+    top: 84px;
     right: 10px;
   }
 }
