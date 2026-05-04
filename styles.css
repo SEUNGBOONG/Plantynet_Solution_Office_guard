@@ -76,6 +76,12 @@ body {
   letter-spacing: 0.2px;
 }
 
+.brand span {
+  font-size: 0.88rem;
+  color: #b7caff;
+  font-weight: 600;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
