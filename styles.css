@@ -112,6 +112,12 @@ h1 {
   line-height: 1.3;
 }
 
+.sub-title {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
 .stats {
   display: grid;
   gap: 14px;
@@ -184,6 +190,51 @@ h1 {
   color: var(--primary);
 }
 
+.image-wrap {
+  margin: 26px 0 8px;
+}
+
+.image-wrap img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #d8e1ff;
+  display: block;
+}
+
+.image-wrap-light img {
+  border-color: rgba(180, 202, 255, 0.45);
+}
+
+.expect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.expect-grid article {
+  border: 1px solid rgba(153, 177, 255, 0.35);
+  background: rgba(18, 35, 78, 0.55);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.expect-grid h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #dce8ff;
+}
+
+.expect-grid ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #c7d7ff;
+}
+
+.expect-grid li + li {
+  margin-top: 8px;
+}
+
 .screen-grid {
   margin-top: 22px;
   display: grid;
@@ -229,6 +280,32 @@ h1 {
   color: #233b83;
 }
 
+.table-wrap {
+  margin-top: 18px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #d9e2ff;
+}
+
+th,
+td {
+  border: 1px solid #d9e2ff;
+  padding: 11px 10px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.93rem;
+}
+
+th {
+  background: #f2f6ff;
+  color: #213b84;
+}
+
 .bullet-list {
   margin: 10px 0 0;
   padding-left: 20px;
@@ -260,6 +337,13 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 14px;
   margin-top: 20px;
+}
+
+.db-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
 }
 
 footer {

@@ -23,7 +23,9 @@
         <div class="nav-links">
           <a href="#overview">개요</a>
           <a href="#features">주요기능</a>
-          <a href="#screens">주요화면</a>
+          <a href="#db">유해DB</a>
+          <a href="#advantage">DB특장점</a>
+          <a href="#architecture">구성도</a>
           <a class="cta-link" href="#contact">도입 문의</a>
         </div>
       </nav>
@@ -66,6 +68,9 @@
             <p>비업무 사이트 카테고리 분류</p>
           </article>
         </div>
+        <figure class="image-wrap">
+          <img src="./assets/01-threat.png" alt="보안 위협 증가 관련 인포그래픽" />
+        </figure>
       </section>
 
       <section class="section section-dark" id="features">
@@ -77,6 +82,35 @@
             불필요한 접속을 통제함으로써 직원들의 업무효율성을 향상시키며 내부 네트워크
             효율성을 높이고 기업의 정보 유출을 방지합니다.
           </p>
+          <figure class="image-wrap image-wrap-light">
+            <img src="./assets/02-benefit.png" alt="OfficeGuard 기대효과 설명 이미지" />
+          </figure>
+          <h3 class="sub-title">OfficeGuard 기대효과</h3>
+          <div class="expect-grid">
+            <article>
+              <h4>업무효율성 향상</h4>
+              <ul>
+                <li>업무 시간 내 인터넷쇼핑, 주식, 게임 등 비업무 사이트 접속 통제</li>
+                <li>인터넷 사용시간 통제로 근로기준법에 근거한 근무시간 준수 지원</li>
+              </ul>
+            </article>
+            <article>
+              <h4>네트워크 자원 효율성 향상</h4>
+              <ul>
+                <li>불필요 트래픽 통제를 통한 내부 네트워크 리소스 효율적 분배</li>
+                <li>추가 증설 등 비용 절감 효과</li>
+                <li>내부 네트워크 속도 향상 및 안정성 유지</li>
+              </ul>
+            </article>
+            <article>
+              <h4>내부 정보보호</h4>
+              <ul>
+                <li>악성코드, 랜섬웨어 유포지 등 유해사이트 접속 차단으로 보안 위협 사전 예방</li>
+                <li>내부 정보 등 기밀 자료 유출 방지</li>
+              </ul>
+            </article>
+          </div>
+          <h3 class="sub-title">OfficeGuard 주요기능</h3>
           <div class="feature-grid">
             <article>
               <h3>웹/응용프로그램 접속 차단 및 통제</h3>
@@ -94,12 +128,23 @@
               <h3>정책 관리 및 보고서</h3>
               <p>조건별/실시간 통계보고서 제공 및 excel, hwp, csv, pdf, txt 형식 지원</p>
             </article>
+            <article>
+              <h3>정책관리</h3>
+              <p>기본 차단 카테고리 제공, 세부 정책(차단/허용/업로드차단), 백업·복원 관리 지원</p>
+            </article>
+            <article>
+              <h3>URL/정책/차단 조회</h3>
+              <p>URL 카테고리 조회, 특정 그룹/IP 정책 조회, 정책 적용 전 차단 테스트 제공</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section container">
+      <section class="section container" id="db">
         <h2>유해 DB 관리 프로세스</h2>
+        <figure class="image-wrap">
+          <img src="./assets/03-db-process.png" alt="유해 DB 관리 프로세스 이미지" />
+        </figure>
         <div class="timeline">
           <div><strong>Step 1</strong><span>데이터 수집</span></div>
           <div><strong>Step 2</strong><span>데이터 검증</span></div>
@@ -110,53 +155,99 @@
           인터넷 최상위 도메인(TLD) 목록 분석, 사용자 로그 분석, AI를 이용한 유해물 검증,
           유효성 검증으로 오차단 방지 및 유해사이트 DB 정확도를 향상시킵니다.
         </p>
-      </section>
-
-      <section class="section container" id="screens">
-        <h2>OfficeGuard 주요 화면</h2>
-        <div class="screen-grid">
-          <article class="screen-card">
-            <h3>대시보드</h3>
-            <p>
-              URL, 카테고리, IP별 차단 내역 실시간 모니터링 정보 제공. 시스템 자원과
-              트래픽 사용량, 서버 상태 현황 모니터링.
-            </p>
+        <div class="db-detail-grid">
+          <article class="card">
+            <h3>AI를 이용한 유해물 검증</h3>
+            <ul class="bullet-list">
+              <li>머신러닝을 활용한 유해물 검증 시스템 활용</li>
+              <li>유해물 검증 시스템 이용하여 불필요 데이터 90% 제거</li>
+              <li>전문 인력 검증 통해 데이터 품질 향상</li>
+            </ul>
           </article>
-          <article class="screen-card">
-            <h3>정책관리</h3>
-            <p>
-              하나의 화면에서 정책, 그룹, 카테고리, 정책적용 기간/시간, 차단화면을
-              직관적으로 관리.
-            </p>
+          <article class="card">
+            <h3>사용자 로그 분석</h3>
+            <ul class="bullet-list">
+              <li>사용자 로그 수집을 통한 유해사이트 검증</li>
+              <li>매일 20억 건 이상의 사용자 로그 분석</li>
+              <li>미차단된 유해사이트도 익일 차단 보장</li>
+            </ul>
           </article>
-          <article class="screen-card">
-            <h3>보고서</h3>
-            <p>
-              URL별, 카테고리별, 시간대별, 그룹별, 사용자별 접속 보고서 조회 및 로그 검색.
-            </p>
+          <article class="card">
+            <h3>인터넷 최상위 도메인(TLD) 분석</h3>
+            <ul class="bullet-list">
+              <li>전체 약 2억 개의 도메인 목록 분석</li>
+              <li>매일 약 20만개의 신규 도메인 분석</li>
+            </ul>
           </article>
-          <article class="screen-card">
-            <h3>시스템 모니터링</h3>
-            <p>
-              CPU, 메모리, HDD, 인/아웃바운드 트래픽 사용률 등 시스템 자원 실시간 확인.
-            </p>
-          </article>
-          <article class="screen-card">
-            <h3>트래픽 모니터링</h3>
-            <p>
-              URL, 카테고리, 그룹, 사용자 IP, 포트 기준 웹/응용프로그램 접속 현황 실시간 분석.
-            </p>
-          </article>
-          <article class="screen-card">
-            <h3>시스템 관리</h3>
-            <p>
-              서버 정보 조회/관리, 엔진 시작·정지·재시작, 시스템 이력 조회 및 보안감사 제공.
-            </p>
+          <article class="card">
+            <h3>DB 현행화</h3>
+            <ul class="bullet-list">
+              <li>유해사이트 속성 변경 확인을 위한 유효성 검증</li>
+              <li>유효성 검증으로 매년 약 50만개 사이트 삭제</li>
+              <li>오차단 방지 및 유해사이트 DB 정확도 향상</li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section class="section section-soft">
+      <section class="section section-soft" id="advantage">
+        <div class="container">
+          <h2>OfficeGuard 유해 DB 특장점</h2>
+          <p>
+            OfficeGuard는 고도화된 머신러닝 AI를 활용한 정제된 DB를 제공하며 경쟁사와의
+            경쟁력있는 차별성을 제공합니다.
+          </p>
+          <figure class="image-wrap">
+            <img src="./assets/04-db-advantage.png" alt="OfficeGuard 유해 DB 특장점 비교표" />
+          </figure>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>Plantynet</th>
+                  <th>A사</th>
+                  <th>B사</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>유해사이트</td>
+                  <td>DB+AI, 방통위 점검 결과 차단율 100%</td>
+                  <td>DB</td>
+                  <td>DB</td>
+                </tr>
+                <tr>
+                  <td>스미싱</td>
+                  <td>1,200만건 DB + 스미싱 탐지 AI, 실가입자 기반 차단율 92%</td>
+                  <td>X</td>
+                  <td>X</td>
+                </tr>
+                <tr>
+                  <td>악성코드 배포</td>
+                  <td>4,300만건 DB, 악성코드/랜섬웨어 감염경로 원천 차단</td>
+                  <td>X</td>
+                  <td>O</td>
+                </tr>
+                <tr>
+                  <td>비업무 사이트/프로그램</td>
+                  <td>83개/12개 카테고리 분류 차단</td>
+                  <td>O</td>
+                  <td>O</td>
+                </tr>
+                <tr>
+                  <td>유해동영상</td>
+                  <td>60만건 DB, 정확도 96% 이상 AI 기반 판별 차단</td>
+                  <td>X</td>
+                  <td>O</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="architecture">
         <div class="container">
           <h2>구성도 및 도입 방식</h2>
           <p>
@@ -164,12 +255,39 @@
             동작합니다. 미러링 포트 또는 탭 장비를 이용해 트래픽을 복사하여 네트워크를
             모니터링합니다.
           </p>
+          <figure class="image-wrap">
+            <img src="./assets/05-architecture.png" alt="OfficeGuard 구성도 및 권장사양" />
+          </figure>
           <div class="arch">
             <span>Internet</span>
             <span>Switch</span>
             <span>탭 or 미러포트</span>
             <span>OfficeGuard</span>
             <span>User / 내부망</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>권장사양</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>PCGuard (1 User)</td>
+                  <td>지원 OS: Windows XP 이상, CPU 1GHz+, RAM 4GB+, HDD 여유공간 100MB+</td>
+                </tr>
+                <tr>
+                  <td>OfficeGuard (1Gbps)</td>
+                  <td>E3-2244G, 16GB, 1TB*2(SSD), 6Port UTP + 4Port 1GbE</td>
+                </tr>
+                <tr>
+                  <td>OfficeGuard (10Gbps)</td>
+                  <td>E-2246G, 32GB, 1TB*2(SSD), 4 Ports 10GbE SFP+ Module</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
@@ -184,6 +302,8 @@
             <li>보안 취약 서비스 차단(FTP, SSH, Telnet, RDP 등)</li>
             <li>원격 접근 제어(TeamViewer, VNC, Radmin 등)</li>
             <li>정책 백업/복원, URL 카테고리 조회, 차단 테스트 지원</li>
+            <li>Rule Base 정책 설정, 우선순위 변경, 시간대별 정책 관리(요일별 30분 단위 조합)</li>
+            <li>차단 메시지 커스터마이징, 시스템 이력 조회, 무결성 관리, 권한별 사용자관리</li>
           </ul>
         </div>
       </section>
@@ -214,7 +334,9 @@
         <h2>도입 문의</h2>
         <p>
           네트워크 솔루션 전문기업 ㈜플랜티넷<br />
-          sales@plantynet.com · 070-4489-7000
+          담당자: 이승엽 프로<br />
+          이메일: tmdduqflfl@plantynet.com<br />
+          연락처: 010-3345-7392
         </p>
         <button id="copyBtn" type="button">문의 메일 복사하기</button>
         <p id="copyFeedback" class="feedback" aria-live="polite"></p>
