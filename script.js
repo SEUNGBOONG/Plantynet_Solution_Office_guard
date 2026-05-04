@@ -14,6 +14,11 @@ if (copyBtn && copyFeedback) {
 
 const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
 const sections = document.querySelectorAll("main .section[id]");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxCaption = document.getElementById("lightboxCaption");
+const lightboxClose = document.getElementById("lightboxClose");
+const zoomImages = document.querySelectorAll(".gallery-card img");
 
 navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
@@ -60,3 +65,40 @@ revealTargets.forEach((target) => observer.observe(target));
 
 window.addEventListener("scroll", setActiveLink);
 window.addEventListener("load", setActiveLink);
+
+const openLightbox = (img) => {
+  if (!lightbox || !lightboxImage || !lightboxCaption) return;
+  const caption = img.closest(".gallery-card")?.querySelector("figcaption")?.textContent ?? "";
+  lightboxImage.src = img.src;
+  lightboxImage.alt = img.alt;
+  lightboxCaption.textContent = caption;
+  lightbox.classList.add("open");
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+};
+
+const closeLightbox = () => {
+  if (!lightbox || !lightboxImage) return;
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  lightboxImage.src = "";
+  document.body.style.overflow = "";
+};
+
+zoomImages.forEach((img) => {
+  img.addEventListener("click", () => openLightbox(img));
+});
+
+if (lightboxClose) {
+  lightboxClose.addEventListener("click", closeLightbox);
+}
+
+if (lightbox) {
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+}
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeLightbox();
+});

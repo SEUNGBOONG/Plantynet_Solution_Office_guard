@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="floating-logo">
+      <img src="./assets/20-float-logo.png" alt="Plantynet 로고" />
+    </div>
     <header class="hero">
       <nav class="nav container">
         <strong class="brand">OfficeGuard</strong>
@@ -180,10 +183,6 @@
           <figure class="gallery-card">
             <img src="./assets/14-screen-system2.png" alt="OfficeGuard 시스템 이력 화면" />
             <figcaption>시스템 관리 - 시스템 이력</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="./assets/15-screen-system3.png" alt="OfficeGuard 시스템 이력 추가 화면" />
-            <figcaption>시스템 관리 - 이벤트 이력 조회</figcaption>
           </figure>
         </div>
       </section>
@@ -353,28 +352,25 @@
             <li>Rule Base 정책 설정, 우선순위 변경, 시간대별 정책 관리(요일별 30분 단위 조합)</li>
             <li>차단 메시지 커스터마이징, 시스템 이력 조회, 무결성 관리, 권한별 사용자관리</li>
           </ul>
+          <figure class="image-wrap">
+            <img src="./assets/19-spec-table.png" alt="OfficeGuard 기능 명세 테이블" />
+          </figure>
         </div>
       </section>
 
       <section class="section container">
         <h2>플랜티넷 소개</h2>
-        <p>
-          ㈜플랜티넷은 ‘깨끗하고 안전한 인터넷 세상’을 만들고자 하는 마음에서 시작하여
-          2000년, 국내 최초로 유해 콘텐츠 필터링 서비스를 상용화했습니다.
-        </p>
-        <div class="company-grid">
-          <article class="card">
-            <h3>2000년 설립</h3>
-            <p>약 23년 이상 축적한 유해 디지털 콘텐츠 DB 기반 기술력</p>
-          </article>
-          <article class="card">
-            <h3>주요 제품군</h3>
-            <p>PCGuard, OfficeGuard, OfficeGuard SV, OfficeGuard Plus</p>
-          </article>
-          <article class="card">
-            <h3>주요 레퍼런스</h3>
-            <p>공공, 교육기관, 금융 및 일반 기업 등 다양한 산업군 적용</p>
-          </article>
+        <p>Company Profile 및 연혁, 주요 레퍼런스를 한 눈에 확인할 수 있습니다.</p>
+        <div class="company-showcase">
+          <figure class="image-wrap">
+            <img src="./assets/16-company-cover.png" alt="플랜티넷 회사 소개 표지 및 개요" />
+          </figure>
+          <figure class="image-wrap">
+            <img src="./assets/17-company-history.png" alt="플랜티넷 연혁 및 회사 소개" />
+          </figure>
+          <figure class="image-wrap">
+            <img src="./assets/18-reference.png" alt="플랜티넷 주요 레퍼런스" />
+          </figure>
         </div>
       </section>
 
@@ -396,6 +392,14 @@
         <p>Copyright © 2023 Plantynet Co., Ltd. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lightboxClose" class="lightbox-close" type="button" aria-label="확대 이미지 닫기">
+        ×
+      </button>
+      <img id="lightboxImage" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
 
     <script src="./script.js"></script>
   </body>

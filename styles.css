@@ -22,6 +22,23 @@ body {
   scroll-behavior: smooth;
 }
 
+.floating-logo {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 30;
+  background: rgba(8, 24, 66, 0.8);
+  border: 1px solid rgba(130, 168, 255, 0.5);
+  border-radius: 10px;
+  padding: 6px 8px;
+  backdrop-filter: blur(6px);
+}
+
+.floating-logo img {
+  height: 24px;
+  display: block;
+}
+
 .container {
   width: min(1080px, 92%);
   margin: 0 auto;
@@ -385,6 +402,7 @@ button {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   filter: saturate(0.92) contrast(1.01);
+  cursor: zoom-in;
 }
 
 .gallery-card figcaption {
@@ -406,6 +424,57 @@ button {
   transform: translateY(0);
 }
 
+.company-showcase {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 12, 32, 0.86);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 120;
+  padding: 24px;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: min(1200px, 94vw);
+  max-height: 80vh;
+  border-radius: 12px;
+  border: 1px solid rgba(164, 190, 255, 0.6);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.45);
+}
+
+.lightbox p {
+  margin-top: 10px;
+  color: #d9e6ff;
+  font-weight: 600;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(200, 218, 255, 0.7);
+  background: rgba(8, 23, 61, 0.8);
+  color: #e8f0ff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 footer {
   border-top: 1px solid #e6ebff;
   padding: 20px 0 28px;
@@ -424,5 +493,10 @@ footer {
 
   .nav-links {
     flex-wrap: wrap;
+  }
+
+  .floating-logo {
+    top: 10px;
+    right: 10px;
   }
 }
