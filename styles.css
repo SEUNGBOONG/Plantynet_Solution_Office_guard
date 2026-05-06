@@ -168,6 +168,11 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+.db-kpi {
+  margin-top: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .card {
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -445,6 +450,74 @@ button {
   margin-top: 14px;
 }
 
+.overview-layout {
+  margin-top: 18px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(340px, 1.05fr);
+  align-items: stretch;
+}
+
+.overview-chart h3 {
+  margin: 0 0 12px;
+  font-size: 1.08rem;
+  color: #1a2d67;
+}
+
+.donut-chart {
+  width: min(220px, 68vw);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, #ffffff 0 34%, transparent 35%),
+    conic-gradient(
+      #4b74ff 0 51%,
+      #58d0ff 51% 75%,
+      #79c86b 75% 96%,
+      #ff9b5f 96% 100%
+    );
+  border: 1px solid #dce5ff;
+  box-shadow: 0 10px 20px rgba(33, 67, 144, 0.14);
+}
+
+.chart-legend {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  font-size: 0.92rem;
+}
+
+.chart-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.dot-1 { background: #4b74ff; }
+.dot-2 { background: #58d0ff; }
+.dot-3 { background: #79c86b; }
+.dot-4 { background: #ff9b5f; }
+
+.image-wrap-compact {
+  margin: 0;
+  height: 100%;
+}
+
+.image-wrap-compact img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .reference-figure {
   overflow-x: auto;
   padding-bottom: 6px;
@@ -547,6 +620,14 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .overview-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .image-wrap-compact img {
+    height: auto;
+  }
+
   .floating-logo {
     top: 84px;
     right: 10px;
@@ -636,6 +717,14 @@ footer {
   .feature-grid,
   .expect-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .overview-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .donut-chart {
+    width: 170px;
   }
 
   h1 {
