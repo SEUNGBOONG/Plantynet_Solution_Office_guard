@@ -1,0 +1,11 @@
+{
+  "name": "officeguard-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "pdf": "node tools/export-pdf.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.54.0"
+  }
+}
