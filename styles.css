@@ -445,6 +445,16 @@ button {
   margin-top: 14px;
 }
 
+.reference-figure {
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.reference-figure img {
+  min-width: 920px;
+  width: max(100%, 920px);
+}
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -497,19 +507,44 @@ footer {
 }
 
 @media (max-width: 640px) {
+  body {
+    padding-top: 74px;
+  }
+
   .section {
     padding: 58px 0;
   }
 
   .nav {
-    align-items: flex-start;
-    flex-direction: column;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   .nav-links {
-    flex-wrap: wrap;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 12px;
+    padding-bottom: 2px;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;
+    font-size: 0.86rem;
+  }
+
+  .cta-link {
+    padding: 7px 12px;
+  }
+
+  .hero-content {
+    padding-top: 62px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 
   .floating-logo {
