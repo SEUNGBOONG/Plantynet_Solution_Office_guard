@@ -552,3 +552,125 @@ footer {
     right: 10px;
   }
 }
+
+@page {
+  size: A4 portrait;
+  margin: 12mm;
+}
+
+@media print {
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #ffffff;
+    --card: #ffffff;
+    --text: #111111;
+    --text-light: #111111;
+    --border: #d6d6d6;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #111111;
+    padding-top: 0;
+    line-height: 1.45;
+    font-size: 11pt;
+  }
+
+  .nav,
+  .floating-logo,
+  .lightbox,
+  #copyBtn,
+  #copyFeedback {
+    display: none !important;
+  }
+
+  .hero {
+    background: #ffffff !important;
+    color: #111111;
+    padding: 0 0 8mm;
+  }
+
+  .hero-content {
+    padding-top: 0;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .section {
+    padding: 8mm 0;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .section-dark,
+  .section-soft {
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  .card,
+  .feature-grid article,
+  .expect-grid article,
+  .gallery-card,
+  .timeline div,
+  .arch span {
+    background: #ffffff !important;
+    color: #111111 !important;
+    border-color: #d6d6d6 !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .feature-grid p,
+  .expect-grid ul,
+  .gallery-card figcaption {
+    color: #111111 !important;
+    background: #ffffff !important;
+  }
+
+  .image-wrap,
+  .table-wrap,
+  table,
+  figure {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .image-wrap img,
+  .gallery-card img {
+    border-color: #dddddd;
+    box-shadow: none;
+    filter: none;
+  }
+
+  .reference-figure {
+    overflow: visible;
+  }
+
+  .reference-figure img {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .gallery-grid,
+  .db-detail-grid,
+  .feature-grid,
+  .expect-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  footer {
+    border-top: 1px solid #d6d6d6;
+    color: #555555;
+    padding: 5mm 0 0;
+  }
+}
