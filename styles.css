@@ -555,30 +555,20 @@ footer {
 
 @page {
   size: A4 portrait;
-  margin: 12mm;
+  margin: 8mm;
 }
 
 @media print {
-  :root {
-    --bg: #ffffff;
-    --bg-soft: #ffffff;
-    --card: #ffffff;
-    --text: #111111;
-    --text-light: #111111;
-    --border: #d6d6d6;
-  }
-
   * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
   body {
-    background: #ffffff !important;
-    color: #111111;
+    background: linear-gradient(180deg, #edf2ff 0%, #f8faff 34%, #ffffff 100%) !important;
     padding-top: 0;
-    line-height: 1.45;
-    font-size: 11pt;
+    line-height: 1.5;
+    font-size: 10.5pt;
   }
 
   .nav,
@@ -590,9 +580,7 @@ footer {
   }
 
   .hero {
-    background: #ffffff !important;
-    color: #111111;
-    padding: 0 0 8mm;
+    padding: 0 0 5mm;
   }
 
   .hero-content {
@@ -605,15 +593,9 @@ footer {
   }
 
   .section {
-    padding: 8mm 0;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  .section-dark,
-  .section-soft {
-    background: #ffffff !important;
-    color: #111111 !important;
+    padding: 5mm 0;
+    page-break-inside: auto;
+    break-inside: auto;
   }
 
   .card,
@@ -622,19 +604,9 @@ footer {
   .gallery-card,
   .timeline div,
   .arch span {
-    background: #ffffff !important;
-    color: #111111 !important;
-    border-color: #d6d6d6 !important;
-    box-shadow: none !important;
+    box-shadow: none;
     break-inside: avoid;
     page-break-inside: avoid;
-  }
-
-  .feature-grid p,
-  .expect-grid ul,
-  .gallery-card figcaption {
-    color: #111111 !important;
-    background: #ffffff !important;
   }
 
   .image-wrap,
@@ -647,9 +619,7 @@ footer {
 
   .image-wrap img,
   .gallery-card img {
-    border-color: #dddddd;
     box-shadow: none;
-    filter: none;
   }
 
   .reference-figure {
@@ -668,9 +638,21 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  h1 {
+    font-size: 24pt;
+  }
+
+  .section h2 {
+    font-size: 18pt;
+    margin-bottom: 10px;
+  }
+
+  .sub-title {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
   footer {
-    border-top: 1px solid #d6d6d6;
-    color: #555555;
-    padding: 5mm 0 0;
+    padding: 4mm 0 0;
   }
 }
