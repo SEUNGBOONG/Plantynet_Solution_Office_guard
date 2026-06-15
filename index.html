@@ -35,7 +35,7 @@
         </button>
         <div id="navMenu" class="nav-menu">
           <a href="#officeguard">오피스가드 설명</a>
-          <a href="#products">제품군</a>
+          <a href="#products">오피스가드 종류</a>
           <a href="#plantynet">플랜티넷 소개</a>
           <a href="#industry">적용 이미지</a>
           <a class="nav-cta" href="#contact">도입 문의</a>
@@ -59,23 +59,17 @@
             </div>
           </div>
           <div class="hero-visual">
-            <div class="solution-visual">
-              <div class="solution-product">
-                <span>OfficeGuard</span>
-                <strong>Web Security Gateway</strong>
-              </div>
-              <div class="solution-flow">
-                <span>사용자</span>
-                <i></i>
-                <span>OfficeGuard</span>
-                <i></i>
-                <span>Internet</span>
-              </div>
-              <div class="solution-tags">
-                <em>비업무 사이트 통제</em>
-                <em>유해 콘텐츠 차단</em>
-                <em>SSL 가시성</em>
-              </div>
+            <div class="visual-shell">
+              <div class="visual-toolbar"><span></span><span></span><span></span></div>
+              <img src="./assets/06-screen-dashboard.png" alt="OfficeGuard 대시보드 화면" />
+            </div>
+            <div class="floating-metric metric-a">
+              <strong>Policy</strong>
+              <span>조직별 정책</span>
+            </div>
+            <div class="floating-metric metric-b">
+              <strong>SSL</strong>
+              <span>가시성 강화</span>
             </div>
           </div>
         </div>
@@ -85,20 +79,24 @@
         <div class="section-head">
           <span class="section-kicker">01</span>
           <h2>오피스가드 설명</h2>
-          <p>업무망의 인터넷 사용 기준을 세우고, 조직별 정책에 따라 비업무 사이트와 유해 사이트 접속을 관리하는 네트워크 보안 솔루션입니다.</p>
+          <p>
+            OfficeGuard는 업무망에서 허용할 사이트와 차단할 사이트를 분리하고, 사용자와 조직별 정책에 맞춰
+            인터넷 사용을 관리하는 웹 보안 솔루션입니다. 웹하드, 게임, 증권, P2P, 메신저, 쇼핑 등 업무와
+            무관한 접속을 줄이고, 피싱과 악성 경로로 이어질 수 있는 사이트도 함께 통제합니다.
+          </p>
         </div>
         <div class="feature-strip">
           <article>
             <h3>접속 통제</h3>
-            <p>비업무 사이트 사용을 정책으로 관리합니다.</p>
+            <p>업무와 무관한 접속을 정책으로 관리합니다.</p>
           </article>
           <article>
-            <h3>유해 차단</h3>
-            <p>악성 경로와 유해 콘텐츠 접속을 줄입니다.</p>
+            <h3>위협 차단</h3>
+            <p>유해 사이트와 악성 경로 접속을 줄입니다.</p>
           </article>
           <article>
-            <h3>운영 관리</h3>
-            <p>조직 기준에 맞춰 일관된 정책 운영이 가능합니다.</p>
+            <h3>정책 운영</h3>
+            <p>조직별 기준으로 일관된 운영이 가능합니다.</p>
           </article>
         </div>
       </section>
@@ -107,7 +105,7 @@
         <div class="section-head">
           <span class="section-kicker">02</span>
           <h2>오피스가드 종류</h2>
-          <p>제품별 적용 범위는 각 제품 설명 안에 넣어, 공개 페이지에서는 핵심 차이만 보이도록 정리했습니다.</p>
+          <p>각 제품의 차이점과 적용 범위는 아래 카드 안에 함께 넣었습니다.</p>
         </div>
         <div id="productCards" class="product-cards"></div>
         <div id="productTabs" class="product-tabs" aria-label="제품 탭"></div>
@@ -123,7 +121,7 @@
         <div class="company-profile">
           <div class="company-story">
             <p>
-              플랜티넷은 네트워크 전문 솔루션 기업으로써 국내·외에서 검증받은 기술력을 기반으로 안전한 인터넷 세상을 만들어가겠습니다.
+              플랜티넷은 네트워크 전문 솔루션 기업으로서 국내·외에서 검증받은 기술력을 기반으로 안전한 인터넷 세상을 만들어가겠습니다.
             </p>
             <div class="company-proof">
               <strong>2000</strong>
@@ -149,22 +147,22 @@
       <section class="section container" id="industry">
         <div class="section-head">
           <span class="section-kicker">Use Cases</span>
-          <h2>교육기관·금융·일반 환경 적용 이미지</h2>
-          <p>상세한 구성은 문의 후 안내하고, 공개 페이지에서는 업종별 적용 분위기만 보여줍니다.</p>
+          <h2>업종 적용 이미지</h2>
+          <p>교육기관, 금융, 일반 환경에서의 활용 이미지를 통해 분위기만 보여줍니다.</p>
         </div>
-        <div class="industry-grid">
-          <figure class="industry-card industry-card--wide">
-            <img src="./assets/교육기관 금융 및 일반.png" alt="교육기관 금융 및 일반 적용 이미지" />
-            <figcaption>교육기관, 금융, 일반 환경</figcaption>
-          </figure>
-          <figure class="industry-card">
-            <img src="./assets/1.png" alt="적용 이미지 1" />
-            <figcaption>적용 이미지 1</figcaption>
-          </figure>
-          <figure class="industry-card">
-            <img src="./assets/2.png" alt="적용 이미지 2" />
-            <figcaption>적용 이미지 2</figcaption>
-          </figure>
+        <div class="industry-marquee">
+          <div class="industry-track">
+            <figure class="industry-tile"><img src="./assets/교육기관 금융 및 일반.png" alt="교육기관 금융 및 일반 적용 이미지" /></figure>
+            <figure class="industry-tile"><img src="./assets/1.png" alt="적용 이미지 1" /></figure>
+            <figure class="industry-tile"><img src="./assets/2.png" alt="적용 이미지 2" /></figure>
+            <figure class="industry-tile"><img src="./assets/교육기관 금융 및 일반.png" alt="교육기관 금융 및 일반 적용 이미지" /></figure>
+            <figure class="industry-tile"><img src="./assets/1.png" alt="적용 이미지 1" /></figure>
+            <figure class="industry-tile"><img src="./assets/2.png" alt="적용 이미지 2" /></figure>
+          </div>
+        </div>
+        <div class="industry-feature-row">
+          <figure class="industry-feature"><img src="./assets/1.png" alt="적용 이미지 1" /></figure>
+          <figure class="industry-feature"><img src="./assets/2.png" alt="적용 이미지 2" /></figure>
         </div>
       </section>
 
@@ -196,4 +194,4 @@
     <script src="./js/products.js"></script>
     <script src="./script.js"></script>
   </body>
-  </html>
+</html>

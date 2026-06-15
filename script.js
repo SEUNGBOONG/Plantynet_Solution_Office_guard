@@ -113,7 +113,7 @@ function initCopy() {
 
 function initReveal() {
   const items = document.querySelectorAll(
-    ".section, .product-card, .product-panel, .company-profile, .industry-card"
+    ".section, .product-card, .product-panel, .company-profile, .industry-tile, .industry-feature"
   );
   items.forEach((item) => item.classList.add("reveal"));
 
