@@ -136,7 +136,7 @@ function initCopy() {
 }
 
 function initLightbox() {
-  document.querySelectorAll(".gallery-card img, .panel-media img").forEach((img) => {
+  document.querySelectorAll(".gallery-card img, .panel-media img, .material-card img").forEach((img) => {
     img.addEventListener("click", () => {
       lightboxImage.src = img.src;
       lightboxImage.alt = img.alt;
@@ -163,7 +163,9 @@ function initLightbox() {
 }
 
 function initReveal() {
-  const items = document.querySelectorAll(".section, .product-card, .visual-card, .gallery-card");
+  const items = document.querySelectorAll(
+    ".section, .product-card, .visual-card, .gallery-card, .material-card"
+  );
   items.forEach((item) => item.classList.add("reveal"));
 
   const observer = new IntersectionObserver(

@@ -432,7 +432,8 @@ a {
 
 .panel-media img,
 .visual-card img,
-.gallery-card img {
+.gallery-card img,
+.material-card img {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -516,7 +517,8 @@ a {
 }
 
 .visual-card figcaption,
-.gallery-card figcaption {
+.gallery-card figcaption,
+.material-card figcaption {
   margin-top: 10px;
   color: var(--muted);
   font-weight: 700;
@@ -566,6 +568,24 @@ td:not(:first-child) {
 .gallery-card img {
   aspect-ratio: 16 / 10;
   object-fit: cover;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.material-card {
+  margin: 0;
+  min-width: 0;
+}
+
+.material-card img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #f7f9fd;
+  box-shadow: 0 10px 28px rgba(16, 34, 66, 0.08);
 }
 
 .company-grid {
@@ -696,7 +716,8 @@ td:not(:first-child) {
   }
 
   .product-cards,
-  .gallery-grid {
+  .gallery-grid,
+  .materials-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -782,6 +803,7 @@ td:not(:first-child) {
   .product-cards,
   .product-tabs,
   .gallery-grid,
+  .materials-grid,
   .db-stats,
   .mini-stats {
     grid-template-columns: 1fr;
