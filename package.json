@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "npx --yes serve . -p 3000",
     "pdf": "node tools/export-pdf.js"
   },
   "devDependencies": {
