@@ -61,10 +61,9 @@ function renderProductTabs() {
             </ul>
             <p class="target"><strong>추천 환경</strong> ${product.targets}</p>
           </div>
-          <div class="panel-abstract" aria-hidden="true">
-            <span>${product.name}</span>
-            <strong>${product.tagline}</strong>
-          </div>
+          <figure class="panel-media">
+            <img src="${product.image}" alt="${product.name} 소개 이미지" />
+          </figure>
         </article>`
     )
     .join("");
@@ -82,7 +81,6 @@ function renderProductTabs() {
 }
 
 function renderSharedSections() {
-  if (!dbStats || !dbProcess || !compareBody) return;
   dbStats.innerHTML = shared.dbStats
     .map((item) => `<article><strong>${item.value}</strong><span>${item.label}</span></article>`)
     .join("");
@@ -138,7 +136,6 @@ function initCopy() {
 }
 
 function initLightbox() {
-  if (!lightbox || !lightboxImage || !lightboxClose) return;
   document.querySelectorAll(".gallery-card img, .panel-media img, .material-card img").forEach((img) => {
     img.addEventListener("click", () => {
       lightboxImage.src = img.src;

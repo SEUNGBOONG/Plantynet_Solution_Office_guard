@@ -35,8 +35,8 @@
         </button>
         <div id="navMenu" class="nav-menu">
           <a href="#products">제품군</a>
-          <a href="#capabilities">주요 기능</a>
-          <a href="#effects">도입 효과</a>
+          <a href="#platform">공통 역량</a>
+          <a href="#screens">화면 구성</a>
           <a href="#company">플랜티넷</a>
           <a class="nav-cta" href="#contact">도입 문의</a>
         </div>
@@ -55,35 +55,21 @@
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#products">제품 비교하기</a>
-              <a class="btn btn-ghost" href="#contact">자료 요청</a>
+              <a class="btn btn-ghost" href="#contact">도입 상담</a>
             </div>
           </div>
           <div class="hero-visual" aria-label="OfficeGuard 대시보드 미리보기">
-            <div class="solution-visual">
-              <div class="solution-product">
-                <span>OfficeGuard</span>
-                <strong>Web Security Gateway</strong>
-              </div>
-              <div class="solution-flow">
-                <span>사용자</span>
-                <i></i>
-                <span>OfficeGuard</span>
-                <i></i>
-                <span>Internet</span>
-              </div>
-              <div class="solution-tags">
-                <em>비업무 사이트 통제</em>
-                <em>유해 콘텐츠 차단</em>
-                <em>SSL 가시성</em>
-              </div>
+            <div class="visual-shell">
+              <div class="visual-toolbar"><span></span><span></span><span></span></div>
+              <img src="./assets/06-screen-dashboard.png" alt="OfficeGuard 대시보드 화면" />
             </div>
             <div class="floating-metric metric-a">
-              <strong>Policy</strong>
-              <span>조직별 접속 정책</span>
+              <strong>83개</strong>
+              <span>비업무 카테고리</span>
             </div>
             <div class="floating-metric metric-b">
               <strong>SSL</strong>
-              <span>암호화 트래픽 가시성</span>
+              <span>스마트 가시성</span>
             </div>
           </div>
         </div>
@@ -93,7 +79,7 @@
         <div class="section-head">
           <span class="section-kicker">Product Lineup</span>
           <h2>세 가지 제품으로 구성되는 OfficeGuard</h2>
-          <p>조직의 보안 수준과 네트워크 환경에 맞춰 차단, SSL 가시성, 통합 보안 제품을 선택할 수 있습니다.</p>
+          <p>기존 카테고리는 공통 역량으로 통합하고, 제품별 차별점을 먼저 비교할 수 있게 구성했습니다.</p>
         </div>
         <div id="productCards" class="product-cards"></div>
 
@@ -103,52 +89,142 @@
         </div>
       </section>
 
-      <section class="section platform" id="capabilities">
+      <section class="section platform" id="platform">
         <div class="container">
           <div class="section-head">
-            <span class="section-kicker">Core Capability</span>
-            <h2>공개 페이지에서는 핵심만 명확하게</h2>
-            <p>세부 구조, 관리 화면, DB 운영 방식은 별도 상담과 자료 요청 시 안내합니다.</p>
+            <span class="section-kicker">Shared Capability</span>
+            <h2>OfficeGuard 제품군이 공유하는 보안 기반</h2>
+            <p>PDF 제품소개서의 DB 관리, 정책 관리, 모니터링 내용을 하나의 공통 플랫폼 섹션으로 통합했습니다.</p>
           </div>
-          <div class="capability-grid">
-            <article>
-              <span>01</span>
-              <h3>인터넷 접속 통제</h3>
-              <p>비업무 사이트와 업무와 무관한 웹 사용을 조직 정책에 따라 관리합니다.</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>유해 사이트 차단</h3>
-              <p>악성 URL, 피싱, 유해 콘텐츠 접속을 사전에 차단해 보안 위협을 줄입니다.</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>SSL 트래픽 가시성</h3>
-              <p>암호화 트래픽 환경에서도 웹 보안 사각지대를 줄일 수 있도록 지원합니다.</p>
-            </article>
+          <div id="dbStats" class="db-stats"></div>
+          <div class="platform-grid">
+            <figure class="visual-card">
+              <img src="./assets/03-db-process.png" alt="유해 DB 관리 프로세스" />
+              <figcaption>AI 기반 유해 DB 관리 프로세스</figcaption>
+            </figure>
+            <div class="process-card">
+              <h3>탐지부터 정책 반영까지 반복 운영</h3>
+              <ol id="dbProcess"></ol>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section container" id="effects">
+      <section class="section container">
         <div class="section-head">
-          <span class="section-kicker">Business Value</span>
-          <h2>도입 효과</h2>
-          <p>내부 정책을 지키면서도 업무망의 안정성과 보안 수준을 함께 높입니다.</p>
+          <span class="section-kicker">Comparison</span>
+          <h2>제품별 적용 범위</h2>
         </div>
-        <div class="effect-grid">
-          <article>
-            <h3>업무 생산성 향상</h3>
-            <p>업무시간 내 불필요한 웹 사용을 줄이고 조직별 인터넷 사용 기준을 일관되게 적용합니다.</p>
-          </article>
-          <article>
-            <h3>웹 보안 강화</h3>
-            <p>유해 사이트와 악성 경로 접속을 차단해 보안 사고 가능성을 낮춥니다.</p>
-          </article>
-          <article>
-            <h3>네트워크 안정성 확보</h3>
-            <p>불필요한 트래픽 사용을 줄이고 보안 장비와 연동해 업무망 운영 효율을 높입니다.</p>
-          </article>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>기능</th>
+                <th>OfficeGuard</th>
+                <th>OfficeGuard SV</th>
+                <th>OfficeGuard Plus</th>
+              </tr>
+            </thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section screens" id="screens">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-kicker">Console</span>
+            <h2>운영자가 바로 확인하는 관리 화면</h2>
+            <p>대시보드, 정책 관리, 보고서, 모니터링 화면으로 도입 후 운영 흐름을 보여줍니다.</p>
+          </div>
+          <div class="gallery-grid">
+            <figure class="gallery-card">
+              <img src="./assets/06-screen-dashboard.png" alt="대시보드 화면" />
+              <figcaption>대시보드</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/07-screen-policy1.png" alt="직급별 정책 관리 화면" />
+              <figcaption>직급별 정책 관리</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/10-screen-report.png" alt="보고서 화면" />
+              <figcaption>조건별 보고서</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/12-screen-traffic.png" alt="트래픽 모니터링 화면" />
+              <figcaption>트래픽 모니터링</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/08-screen-policy2.png" alt="정책 백업 및 복원 화면" />
+              <figcaption>정책 백업</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/09-screen-policy3.png" alt="URL 카테고리 및 정책 조회 화면" />
+              <figcaption>URL 정책 조회</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/11-screen-monitor.png" alt="시스템 모니터링 화면" />
+              <figcaption>시스템 모니터링</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/13-screen-system1.png" alt="서버 관리 화면" />
+              <figcaption>서버 관리</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/14-screen-system2.png" alt="시스템 이력 화면" />
+              <figcaption>시스템 이력</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/15-screen-system3.png" alt="시스템 관리 화면" />
+              <figcaption>시스템 관리</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./assets/19-spec-table.png" alt="OfficeGuard 기능 명세 자료" />
+              <figcaption>기능 명세</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="materials">
+        <div class="section-head">
+          <span class="section-kicker">Materials</span>
+          <h2>제품소개서 주요 자료</h2>
+          <p>제품 이해에 필요한 위협, 기대효과, DB, 구성도, 레퍼런스 자료를 한곳에 모았습니다.</p>
+        </div>
+        <div class="materials-grid">
+          <figure class="material-card">
+            <img src="./assets/01-threat.png" alt="비업무 트래픽과 보안 위협 자료" />
+            <figcaption>보안 위협</figcaption>
+          </figure>
+          <figure class="material-card">
+            <img src="./assets/02-benefit.png" alt="OfficeGuard 기대효과 자료" />
+            <figcaption>기대효과</figcaption>
+          </figure>
+          <figure class="material-card">
+            <img src="./assets/03-db-process.png" alt="유해 DB 관리 프로세스 자료" />
+            <figcaption>DB 관리</figcaption>
+          </figure>
+          <figure class="material-card">
+            <img src="./assets/04-db-advantage.png" alt="유해 DB 특장점 자료" />
+            <figcaption>DB 특장점</figcaption>
+          </figure>
+          <figure class="material-card">
+            <img src="./assets/05-architecture.png" alt="OfficeGuard 구성도 자료" />
+            <figcaption>구성도</figcaption>
+          </figure>
+          <figure class="material-card">
+            <img src="./assets/17-company-history.png" alt="플랜티넷 회사 연혁 자료" />
+            <figcaption>회사 연혁</figcaption>
+          </figure>
+          <figure class="material-card">
+            <img src="./assets/18-reference.png" alt="플랜티넷 레퍼런스 자료" />
+            <figcaption>레퍼런스</figcaption>
+          </figure>
+          <figure class="material-card">
+            <img src="./assets/21-reference-replaced.png" alt="플랜티넷 레퍼런스 보강 자료" />
+            <figcaption>레퍼런스 보강</figcaption>
+          </figure>
         </div>
       </section>
 
