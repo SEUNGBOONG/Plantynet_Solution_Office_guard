@@ -1,21 +1,14 @@
-const { products, shared, companyInfo } = window.AppData;
+const { products, companyInfo } = window.AppData;
 
 const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
 const productCards = document.getElementById("productCards");
 const productTabs = document.getElementById("productTabs");
 const productPanels = document.getElementById("productPanels");
-const dbStats = document.getElementById("dbStats");
-const dbProcess = document.getElementById("dbProcess");
-const compareBody = document.getElementById("compareBody");
 const companyDesc = document.getElementById("companyDesc");
 const contactInfo = document.getElementById("contactInfo");
 const copyBtn = document.getElementById("copyBtn");
 const copyFeedback = document.getElementById("copyFeedback");
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightboxImage");
-const lightboxCaption = document.getElementById("lightboxCaption");
-const lightboxClose = document.getElementById("lightboxClose");
 
 function renderProductCards() {
   productCards.innerHTML = products
@@ -59,11 +52,12 @@ function renderProductTabs() {
             <ul>
               ${product.features.map((feature) => `<li>${feature}</li>`).join("")}
             </ul>
-            <p class="target"><strong>추천 환경</strong> ${product.targets}</p>
+            <p class="target"><strong>적용 범위</strong> ${product.targets}</p>
           </div>
-          <figure class="panel-media">
-            <img src="${product.image}" alt="${product.name} 소개 이미지" />
-          </figure>
+          <div class="panel-abstract" aria-hidden="true">
+            <span>${product.name}</span>
+            <strong>${product.tagline}</strong>
+          </div>
         </article>`
     )
     .join("");
@@ -78,24 +72,6 @@ function renderProductTabs() {
       button.classList.add("active");
     });
   });
-}
-
-function renderSharedSections() {
-  dbStats.innerHTML = shared.dbStats
-    .map((item) => `<article><strong>${item.value}</strong><span>${item.label}</span></article>`)
-    .join("");
-
-  dbProcess.innerHTML = shared.process
-    .map((step, index) => `<li><strong>Step ${index + 1}</strong><span>${step}</span></li>`)
-    .join("");
-
-  compareBody.innerHTML = `
-    <tr><td>비업무·유해 사이트 차단</td><td>지원</td><td>연동</td><td>지원</td></tr>
-    <tr><td>SSL/TLS 트래픽 가시화</td><td>-</td><td>지원</td><td>지원</td></tr>
-    <tr><td>AI 기반 유해 DB</td><td>지원</td><td>연동</td><td>지원</td></tr>
-    <tr><td>인증서 배포·관리</td><td>-</td><td>일부</td><td>지원</td></tr>
-    <tr><td>REST API 연동</td><td>-</td><td>지원</td><td>지원</td></tr>
-    <tr><td>미러 모드 구성</td><td>지원</td><td>지원</td><td>지원</td></tr>`;
 }
 
 function renderCompany() {
@@ -135,36 +111,9 @@ function initCopy() {
   });
 }
 
-function initLightbox() {
-  document.querySelectorAll(".gallery-card img, .panel-media img, .material-card img").forEach((img) => {
-    img.addEventListener("click", () => {
-      lightboxImage.src = img.src;
-      lightboxImage.alt = img.alt;
-      lightboxCaption.textContent =
-        img.closest("figure")?.querySelector("figcaption")?.textContent || img.alt;
-      lightbox.classList.add("open");
-      lightbox.setAttribute("aria-hidden", "false");
-    });
-  });
-
-  const close = () => {
-    lightbox.classList.remove("open");
-    lightbox.setAttribute("aria-hidden", "true");
-    lightboxImage.src = "";
-  };
-
-  lightboxClose.addEventListener("click", close);
-  lightbox.addEventListener("click", (event) => {
-    if (event.target === lightbox) close();
-  });
-  window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") close();
-  });
-}
-
 function initReveal() {
   const items = document.querySelectorAll(
-    ".section, .product-card, .visual-card, .gallery-card, .material-card"
+    ".section, .product-card, .product-panel, .company-profile, .industry-card"
   );
   items.forEach((item) => item.classList.add("reveal"));
 
@@ -177,7 +126,7 @@ function initReveal() {
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.12 }
   );
 
   items.forEach((item) => observer.observe(item));
@@ -185,9 +134,7 @@ function initReveal() {
 
 renderProductCards();
 renderProductTabs();
-renderSharedSections();
 renderCompany();
 initNavigation();
 initCopy();
-initLightbox();
 initReveal();
