@@ -112,10 +112,11 @@ function initCopy() {
 }
 
 function initReveal() {
-  const items = document.querySelectorAll(
-    ".section, .product-card, .product-panel, .company-profile, .industry-tile, .industry-feature"
-  );
-  items.forEach((item) => item.classList.add("reveal"));
+  document.querySelectorAll(".product-card, .product-panel, .company-profile").forEach((item) => {
+    item.classList.add("reveal");
+  });
+
+  const items = document.querySelectorAll(".reveal");
 
   const observer = new IntersectionObserver(
     (entries) => {
