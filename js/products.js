@@ -74,7 +74,7 @@ window.AppData = {
       "㈜플랜티넷은 '깨끗하고 안전한 인터넷 세상'을 만들고자 하는 마음에서 시작하여 2000년 국내 최초로 유해 콘텐츠 필터링 서비스를 상용화하였습니다. 이후 지난 23년간 비업무·유해사이트 차단 솔루션 PCGuard, OfficeGuard와 SSL 암복호화 솔루션 OfficeGuard SV, OfficeGuard Plus를 제공해오고 있습니다. 디지털 트랜스포메이션 환경으로의 ICT 트렌드 변화에 발맞추어 끊임없이 연구개발에 투자하고 있으며, 축적한 기술력을 기반으로 차세대 네트워크 보안 솔루션까지 사업 영역을 확장하고 있습니다.",
     contact: {
       name: "이승엽 프로",
-      email: "tmdduqflfl@plantynet.com",
+      email: "b_sales@plantynet.com",
       phone: "010-3345-7392",
     },
     address: "경기 성남시 분당구 대왕판교로 670, A동 6층",
