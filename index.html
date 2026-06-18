@@ -1,199 +1,207 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>OfficeGuard | 플랜티넷 웹 보안 솔루션</title>
-    <meta name="description" content="플랜티넷 OfficeGuard, OfficeGuard SV, OfficeGuard Plus 제품군 소개 사이트" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="site-header" id="home">
-      <nav class="nav container" aria-label="주요 메뉴">
+    <meta name="description" content="플랜티넷 OfficeGuard, OfficeGuard SV, OfficeGuard Plus 제품군 소개 사이트"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles.css"/>
+
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#2189ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="./assets/logo.jpeg">
+</head>
+<body>
+<header class="site-header" id="home">
+    <nav class="nav container" aria-label="주요 메뉴">
         <a class="brand" href="#home" aria-label="OfficeGuard 홈">
-          <img src="./assets/20-float-logo.png" alt="" width="30" height="30" />
-          <span>OfficeGuard</span>
+            <img src="./assets/logo.jpeg" alt="" width="30" height="30"/>
+            <span>OfficeGuard</span>
         </a>
         <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="메뉴 열기">
-          <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
         </button>
         <div id="navMenu" class="nav-menu">
-          <a href="#officeguard">오피스가드 설명</a>
-          <a href="#products">오피스가드 종류</a>
-          <a href="#plantynet">플랜티넷 소개</a>
-          <a href="#industry"></a>
-          <a class="nav-cta" href="#contact">도입 문의</a>
+            <a href="#officeguard">오피스가드 설명</a>
+            <a href="#products">오피스가드 종류</a>
+            <a href="#plantynet">플랜티넷 소개</a>
+            <a href="#industry">적용 사례</a>
+            <a class="nav-cta" href="#contact">도입 문의</a>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-    <main>
-      <section class="hero">
+<main>
+    <section class="hero">
         <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Plantynet Network Security</p>
-            <h2>업무망 웹 보안을 한 화면에서 관리하는 OfficeGuard </h2>
-            <p>
-              비업무·유해 사이트 차단, SSL/TLS 트래픽 가시성, 인증서 관리와 API 연동까지
-              조직 환경에 맞춰 선택하는 플랜티넷 웹 보안 솔루션입니다.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#products">제품 보기</a>
-              <a class="btn btn-ghost" href="#contact">자료 요청</a>
+            <div class="hero-copy">
+                <p class="eyebrow">Plantynet Network Security</p>
+                <h2>오피스가드(OfficeGuard)는 유해차단을 통한 네트워크 효율 및 보안강화 솔루션</h2>
+                <p>2000년부터 축적된 최대 규모의 유해/비업무 사이트 DB 보유 (약 1,400만 건)</p>
+                <p>QUIC 프로토콜 웹사이트에서도 URL 선별 차단 제공</p>
+                <p>생성형 AI, 마약, 도박, 보안 관련 카테고리 필터링 제공</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#products">제품 보기</a>
+                    <a class="btn btn-ghost" href="#contact">자료 요청</a>
+                </div>
             </div>
-          </div>
-          <div class="hero-visual">
-            <div class="visual-shell">
-              <div class="visual-toolbar"><span></span><span></span><span></span></div>
-              <img src="./assets/06-screen-dashboard.png" alt="OfficeGuard 대시보드 화면" />
+            <div class="hero-visual">
+                <div class="visual-shell">
+                    <div class="visual-toolbar"><span></span><span></span><span></span></div>
+                    <img src="./assets/06-screen-dashboard.png" alt="OfficeGuard 대시보드 화면" loading="lazy"/>
+                </div>
+                <div class="floating-metric metric-a">
+                    <strong>비업무 사이트 통제</strong>
+                </div>
+                <div class="floating-metric metric-b">
+                    <strong>유해사이트 차단</strong>
+                </div>
+                <div class="floating-metric metric-c">
+                    <strong>SSL 트래픽 가시성</strong>
+                </div>
             </div>
-            <div class="floating-metric metric-a">
-              <strong>유해사이트 차단</strong>
-              <span></span>
-            </div>
-            <div class="floating-metric metric-b">
-              <strong>SSL</strong>
-              <span>가시성 강화</span>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section container" id="officeguard">
-        <div class="intro-gallery">
-          <figure class="intro-image reveal reveal-right">
-            <img src="./assets/02-benefit.png" alt="OfficeGuard 도입 효과" />
-          </figure>
-          <figure class="intro-image reveal reveal-right reveal-delay-1">
-            <img src="./assets/05-architecture.png" alt="OfficeGuard 아키텍처" />
-          </figure>
-        </div>
+    <section class="section container" id="officeguard">
         <div class="section-head reveal">
-          <span class="section-kicker"></span>
-          <h2>오피스가드 설명</h2>
-          <p>
-            OfficeGuard는 업무망에서 허용할 사이트와 차단할 사이트를 분리하고, 사용자와 조직별 정책에 맞춰
-            인터넷 사용을 관리하는 웹 보안 솔루션입니다. 웹하드, 게임, 증권, P2P, 메신저, 쇼핑 등 업무와
-            무관한 접속을 줄이고, 피싱과 악성 경로로 이어질 수 있는 사이트도 함께 통제합니다.
-          </p>
+            <span class="section-kicker"></span>
+            <h2>오피스가드 설명</h2>
+            <p>
+                OfficeGuard는 업무망에서 허용할 사이트와 차단할 사이트를 분리하고, 사용자와 조직별 정책에 맞춰
+                인터넷 사용을 관리하는 웹 보안 솔루션입니다.
+            </p>
         </div>
         <div class="section-bg section-bg--officeguard">
-          <div class="section-bg-overlay"></div>
-          <div class="feature-strip feature-strip--overlay">
-            <article class="reveal reveal-delay-1">
-              <h3>접속 통제</h3>
-              <p>업무와 무관한 접속을 정책으로 관리합니다.</p>
-            </article>
-            <article class="reveal reveal-delay-2">
-              <h3>위협 차단</h3>
-              <p>유해 사이트와 악성 경로 접속을 줄입니다.</p>
-            </article>
-            <article class="reveal reveal-delay-3">
-              <h3>정책 운영</h3>
-              <p>조직별 기준으로 일관된 운영이 가능합니다.</p>
-            </article>
-          </div>
+            <div class="section-bg-overlay"></div>
+            <div class="feature-strip feature-strip--overlay">
+                <article class="reveal reveal-delay-1">
+                    <h3>성능 및 안정성</h3>
+                    <p>1. ETAP 기반 고성능 SSL 복호화 엔진</p>
+                    <p>2. DPI 기반 트래픽 분석</p>
+                    <p>3. 40Gbps 환경 성능 지원</p>
+                    <p>4. 듀얼 링크 및 비대칭 네트워크 지원</p>
+                </article>
+                <article class="reveal reveal-delay-2">
+                    <h3>SSL 복호화 및 가시성</h3>
+                    <p>1. Full Transparent SSL/TLS 복호화</p>
+                    <p>2. SSL 가시성 기능 제공</p>
+                    <p>3. 다양한 3rd Party 연동</p>
+                    <p>4. 장비 맞춤 복호화 지원</p>
+                </article>
+                <article class="reveal reveal-delay-3">
+                    <h3>운영 편리성</h3>
+                    <p>1. 직관적인 정책 설정 UI</p>
+                    <p>2. 사용자 편의성 강화</p>
+                    <p>3. 암·복호화 실패 대응</p>
+                    <p>4. 다양한 바이패스 기능 지원</p>
+                </article>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section container" id="products">
+    <section class="section container" id="products">
         <div class="section-head">
-          <span class="section-kicker"></span>
-          <h2>오피스가드 종류</h2>
-          <p>
-            오피스가드는 기본 차단, SSL 가시성, 통합형 보안으로 나뉘며, 각각의 제품은 서로 다른 운영 환경과
-            보안 요구 수준에 맞춰 설계되어 있습니다. 공개 페이지에서는 핵심 차이만 보여주고, 세부 적용 범위와
-            정책 구성은 문의 시 안내합니다.
-          </p>
+            <span class="section-kicker"></span>
+            <h2>오피스가드 종류</h2>
+            <p>
+                오피스가드는 기본 차단, SSL 가시성, 통합형 보안으로 나뉘며, 각각의 제품은 서로 다른 운영 환경과
+                보안 요구 수준에 맞춰 설계되어 있습니다.
+            </p>
         </div>
         <div id="productCards" class="product-cards"></div>
         <div id="productTabs" class="product-tabs" aria-label="제품 탭"></div>
         <div id="productPanels"></div>
-      </section>
+    </section>
 
-      <section class="section container" id="plantynet">
+    <section class="section container" id="plantynet">
         <div class="section-head">
-          <span class="section-kicker"></span>
-          <h2>플랜티넷 소개</h2>
-          <p id="companyDesc"></p>
+            <span class="section-kicker"></span>
+            <h2>플랜티넷 소개</h2>
+            <p id="companyDesc"></p>
         </div>
         <div class="company-profile">
-          <div class="company-story">
-            <p>
-              플랜티넷은 네트워크 전문 솔루션 기업으로서 국내·외에서 검증받은 기술력을 기반으로 안전한 인터넷 세상을 만들어가겠습니다.
-            </p>
-            <div class="company-proof">
-              <strong>2000</strong>
-              <span>국내 최초 유해 콘텐츠 필터링 서비스 상용화</span>
+            <div class="company-story">
+                <p>
+                    플랜티넷은 네트워크 전문 솔루션 기업으로서 국내·외에서 검증받은 기술력을 기반으로 안전한 인터넷 세상을 만들어가겠습니다.
+                </p>
+                <div class="company-proof">
+                    <strong>2000</strong>
+                    <span>국내 최초 유해 콘텐츠 필터링 서비스 상용화</span>
+                </div>
+                <div class="company-proof">
+                    <strong>23년+</strong>
+                    <span>비업무·유해사이트 차단과 SSL 암복호화 솔루션 제공</span>
+                </div>
             </div>
-            <div class="company-proof">
-              <strong>23년+</strong>
-              <span>비업무·유해사이트 차단과 SSL 암복호화 솔루션 제공</span>
-            </div>
-          </div>
-<!--          <div class="company-visual reveal reveal-right">-->
-<!--            <img src="./assets/2.png" alt="플랜티넷 소개 배경 이미지" />-->
-<!--          </div>-->
-          <dl class="company-facts">
-            <div><dt>회사명</dt><dd>㈜플랜티넷 (Plantynet Co., Ltd)</dd></div>
-            <div><dt>대표이사</dt><dd>김태주</dd></div>
-            <div><dt>업종</dt><dd>시스템 소프트웨어 개발 및 공급업 등</dd></div>
-            <div><dt>설립일</dt><dd>2000년 6월 1일</dd></div>
-            <div><dt>임직원수</dt><dd>78명 (2022년 12월 기준)</dd></div>
-            <div><dt>매출액</dt><dd>285.6억원 (2021년 연결 기준)</dd></div>
-            <div><dt>주소</dt><dd>경기 성남시 분당구 대왕판교로 670, A동 6층</dd></div>
-          </dl>
+            <dl class="company-facts">
+                <div><dt>회사명</dt><dd>㈜플랜티넷 (Plantynet Co., Ltd)</dd></div>
+                <div><dt>대표이사</dt><dd>김태주</dd></div>
+                <div><dt>업종</dt><dd>시스템 소프트웨어 개발 및 공급업 등</dd></div>
+                <div><dt>설립일</dt><dd>2000년 6월 1일</dd></div>
+                <div><dt>임직원수</dt><dd>78명 (2022년 12월 기준)</dd></div>
+                <div><dt>매출액</dt><dd>285.6억원 (2021년 연결 기준)</dd></div>
+                <div><dt>주소</dt><dd>경기 성남시 분당구 대왕판교로 670, A동 6층</dd></div>
+            </dl>
         </div>
-      </section>
+    </section>
 
-      <section class="section container" id="industry">
+    <section class="section container" id="industry">
         <div class="section-head reveal">
-          <span class="section-kicker"></span>
-          <h2></h2>
+            <span class="section-kicker"></span>
+            <h2>적용 사례</h2>
         </div>
         <div class="usecase-marquee">
-          <div class="usecase-track">
-            <figure class="usecase-tile"><img src="./assets/1.1.png" alt="적용 이미지 1.1" /></figure>
-            <figure class="usecase-tile"><img src="./assets/1.2.png" alt="적용 이미지 1.2" /></figure>
-            <figure class="usecase-tile"><img src="./assets/1.3.png" alt="적용 이미지 1.3" /></figure>
-            <figure class="usecase-tile"><img src="./assets/1.4.png" alt="적용 이미지 1.4" /></figure>
-            <figure class="usecase-tile"><img src="./assets/1.1.png" alt="" aria-hidden="true" /></figure>
-            <figure class="usecase-tile"><img src="./assets/1.2.png" alt="" aria-hidden="true" /></figure>
-            <figure class="usecase-tile"><img src="./assets/1.3.png" alt="" aria-hidden="true" /></figure>
-            <figure class="usecase-tile"><img src="./assets/1.4.png" alt="" aria-hidden="true" /></figure>
-          </div>
+            <div class="usecase-track">
+                <figure class="usecase-tile"><img src="./assets/1.1.png" alt="적용 이미지 1.1" loading="lazy"/></figure>
+                <figure class="usecase-tile"><img src="./assets/1.2.png" alt="적용 이미지 1.2" loading="lazy"/></figure>
+                <figure class="usecase-tile"><img src="./assets/1.3.png" alt="적용 이미지 1.3" loading="lazy"/></figure>
+                <figure class="usecase-tile"><img src="./assets/1.4.png" alt="적용 이미지 1.4" loading="lazy"/></figure>
+                <figure class="usecase-tile"><img src="./assets/1.1.png" alt="" aria-hidden="true" loading="lazy"/></figure>
+                <figure class="usecase-tile"><img src="./assets/1.2.png" alt="" aria-hidden="true" loading="lazy"/></figure>
+                <figure class="usecase-tile"><img src="./assets/1.3.png" alt="" aria-hidden="true" loading="lazy"/></figure>
+                <figure class="usecase-tile"><img src="./assets/1.4.png" alt="" aria-hidden="true" loading="lazy"/></figure>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section contact-section" id="contact">
+    <section class="section contact-section" id="contact">
         <div class="container contact-box">
-          <span class="section-kicker">Contact</span>
-          <h2>OfficeGuard 도입 문의</h2>
-          <p>세부 자료는 요청 시 안내드립니다.</p>
-          <div id="contactInfo" class="contact-info"></div>
-          <div class="contact-actions">
-            <button id="copyBtn" class="btn btn-primary" type="button">문의 메일 복사</button>
-            <a class="btn btn-ghost dark" href="mailto:b_sales@plantynet.com">메일 보내기</a>
-          </div>
-          <p id="copyFeedback" class="feedback" aria-live="polite"></p>
+            <span class="section-kicker">Contact</span>
+            <h2>OfficeGuard 도입 문의</h2>
+            <p>세부 자료는 요청 시 안내드립니다.</p>
+            <div id="contactInfo" class="contact-info"></div>
+            <div class="contact-actions">
+                <button id="copyBtn" class="btn btn-primary" type="button">문의 메일 복사</button>
+                <a class="btn btn-ghost dark" href="mailto:b_sales@plantynet.com">메일 보내기</a>
+            </div>
+            <p id="copyFeedback" class="feedback" aria-live="polite"></p>
         </div>
-      </section>
-    </main>
+    </section>
+</main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
+<footer class="site-footer">
+    <div class="container footer-inner">
         <div class="footer-brand">
-          <img src="./assets/20-float-logo.png" alt="" width="24" height="24" />
-          <strong>PLANTYNET</strong>
+            <img src="./assets/20-float-logo.png" alt="" width="24" height="24"/>
+            <strong>PLANTYNET</strong>
         </div>
         <p>Copyright Plantynet Co., Ltd. All rights reserved.</p>
-      </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="./js/products.js"></script>
-    <script src="./script.js"></script>
-  </body>
+<script src="./js/products.js"></script>
+<script src="./script.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js');
+    }
+</script>
+</body>
 </html>
